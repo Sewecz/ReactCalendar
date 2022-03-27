@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+* {
+  font-family: 'League Spartan', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: black;
+}
+.month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #7e837e;
+}
+
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: safe;
+  height: 50px;
+  width: 98%;
+  text-align: end;
+  background-color: cadetblue;
+  border-bottom: rgb(71, 119, 121) solid 3px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.yearLabel {
+  font-weight: 600;
+  font-size: 3.2rem;
+  margin-right: 2px;
+  margin-left: 10px;
+
+      align-self: flex-end;
+  border: none;
+  background: transparent;
+  padding: 2px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  border-radius: 20px;
+}
+
+
+
+.monthLabel {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 2rem;
+  margin-bottom: 3px;
+  border: none;
+  background: transparent;
+  padding: 2px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  border-radius: 20px;
+}
+
+
+
+.buttonHolder {
+  margin-left: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.buttonHolder button {
+  margin-right: 3px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 80%;
+  width: 2em;
+  border: none;
+  margin: 15px;
+  background-color: transparent;
+  font-size: 2rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  font-weight: 900;
+  border-radius: 20px;
+}
+
+
+
+.day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #E8EDDF;
+  border: solid 5px cadetblue;
+  margin: 10px;
+  width: 23%;
+  height: 300px;
+}
+
+.day:hover {
+  background-color: #E8EDDF;
+  cursor: pointer;
+}
+
+.dayLabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: cadetblue;
+}
+
+.dayLabel span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.dayEventHolder {
+  margin-top: 10px;
+}
+
+.dayEvent {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px cadetblue solid;
+}
+
+.dayEvent:last-of-type {
+  border: none;
+}
+
+
+
+.yearView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.yearViewItem {
+  text-align: center;
+  height: 5em;
+  width: 20%;
+  margin: 10px;
+  font-size: 3rem;
+  background-color: #E8EDDF;
+  padding: 5px;
+  border: 5px solid cadetblue;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+
+
+.yearsViewContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+}
+
+.yearsViewContent span {
+  margin: 1px;
+  border: 2px solid cadetblue;
+  border-radius: 12px;
+  padding: 10px;
+  width: 20%;
+}
+
+.monthsView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.monthsViewItem {
+  text-align: center;
+  height: 5em;
+  width: 20%;
+  margin: 10px;
+  font-size: 3rem;
+  background-color: #E8EDDF;
+  padding: 5px;
+  border: 5px solid cadetblue;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.monthsViewItem:hover {
+  cursor: pointer;
+  background-color: #E8EDDF;
+}
+
+.monthsViewContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+}
+
+.monthsViewContent span {
+  margin: 1px;
+  border: 2px solid cadetblue;
+  padding: 5px;
+  width: 10%;
+}
+
+.holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sideBar {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sideBarHidden {
+  display: none;
+}
+
+.sideBarViewLabel {
+  background-color: cadetblue;
+  border-bottom: 5px solid rgb(59, 107, 109);
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  width: 80%;
+}
+
+.extendedEvent {
+  background-color: cadetblue;
+  padding: 5px;
+  border-bottom: 5px solid #E8EDDF;
+}
+
+.extendedEventTitle {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.labelholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.labelholder button {
+  width: 20%;
+  border: none;
+  background-color: cadetblue;
+  padding: 5px;
+  font-size: 1.7rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+
+}
+
+
