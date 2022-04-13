@@ -1,5 +1,4 @@
 import React from "react";
-import dayView from "./dayView";
 import style from "../../Styles/CalendarComponentsStyle.module.css"
 import {label, content} from "./monthsViewComponents/monthsViewComponents.js"
 

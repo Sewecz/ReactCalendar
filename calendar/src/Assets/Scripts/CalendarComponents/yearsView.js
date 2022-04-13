@@ -1,12 +1,10 @@
 import React from "react"
 import style from "../../Styles/CalendarComponentsStyle.module.css"
 import {label, content} from "./yearViewComponents/yearViewComponents.js"
-import MonthsView from "./monthsView";
 
 export default class yearView extends React.Component{
     render() {
         let yearsList = [];
-
         let monthsList = [
             "January",
             "February",

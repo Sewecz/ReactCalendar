@@ -12,10 +12,9 @@ export default class Label extends React.Component{
         return (<div className={style.label}>
             <h1>Calednar</h1>
                     <div className={style.buttonHolder}>
-                        <button onClick={()=>this.handleChange("add")}>UP</button>
-                        <button onClick={()=>this.handleChange("sub")}>DOWN</button>
-                        <button className={style.yearLabel} onClick={()=>this.handleChange("y")}>2022</button>
-                        <button className={style.monthLabel} onClick={()=>this.handleChange("m")}>January</button>
+                        <button className={style.yearLabel} onClick={()=>this.handleChange("y")}>Month</button>
+                        <button className={style.monthLabel} onClick={()=>this.handleChange("m")}>Year</button>
+                        <button className={style.monthLabel} onClick={()=>this.handleChange("d")}>Day</button>
                     </div>
                 </div>)
     }

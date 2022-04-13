@@ -6,7 +6,6 @@ import Sidebar from "./sidebar"
 export default class dayView extends React.Component{
     constructor(props) {
         super(props)
-
         this.numberOfDays = 31
         this.daysArray = [];
         this.sidebarActive = true;
@@ -17,6 +16,7 @@ export default class dayView extends React.Component{
     }
 
     render(){
+
         for(let i=0;i<this.numberOfDays;i++){
             this.daysArray.push(<Days onClick={()=>this.handleClick()} dayNumber={i+1}/>)
         }
